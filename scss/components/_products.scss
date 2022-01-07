@@ -118,7 +118,6 @@
   }
 
   &__btn {
-    @extend %btn_prime;
     margin: 0 auto;
     transition: background-color 0.3s linear, color 0.3s linear;
 

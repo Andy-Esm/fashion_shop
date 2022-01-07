@@ -2,18 +2,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto&display=swap");
 
 // Импорт общих стилей, переменных и миксинов
-@import "_config/_reset";
-@import "_config/_vars";
-@import "_config/_extend";
-@import "_config/_common";
+@import "_config/reset";
+@import "_config/vars";
+@import "_config/mixins";
+@import "_config/extend";
+@import "_config/common";
 
 // Импорт блоков главной страницы  index
-@import "blocks/_header";
-@import "blocks/_hero";
-@import "blocks/_promo";
-@import "blocks/_products";
-@import "blocks/_features";
-@import "blocks/_footer";
+@import "components/header";
+@import "components/hero";
+@import "components/promo";
+@import "components/products";
+@import "components/features";
+@import "components/footer";
+
+// Импорт  небольших блоков
+@import "components/menu";
+@import "components/btn_prime";
+@import "components/footer_social";
+@import "components/cart_buttons";
+@import "components/cart_form";
+@import "components/checkout";
+
 
 // Импорт блоков страницы регистрации registration
 @import "registration";

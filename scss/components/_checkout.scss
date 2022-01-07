@@ -1,0 +1,47 @@
+.checkout{
+  background-color: #f5f3f3;
+  width: 100%;
+  max-width: 360px;
+  height: 100%;
+  max-height: 214px;
+  padding: 42px;
+ 
+  &__text{
+    text-align: right;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 21px;
+  }
+  &__btn{
+    width: 100%;
+    color: #fff;
+    background-color: $accent_color;
+    font-weight: 300;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #db5757;
+      outline: 1px solid $accent-color;
+    }
+  }
+}
+.sub__total{
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  &_price{
+    margin-left: 30px;
+    &--accent{
+      color: $accent_color;
+      font-weight: 700;
+      margin-left: 30px;
+    }
+  }
+}
+.grand__total{
+  font-size: $fs-title;
+  font-weight: 300;
+  line-height: 19px;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+}
