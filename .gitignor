@@ -3,7 +3,7 @@ build
 __MACOSX
 .Saved
 _arc
-node_modules/
+/node_modules/
 .vscode
 .publish
 .DS_Store
@@ -11,6 +11,6 @@ node_modules/
 *.sublime-*
 *.rar
 *.zip
-.idea/
+/.idea/
 ex_files
 Thumbs.db

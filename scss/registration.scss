@@ -1,17 +1,9 @@
-@import "_config.scss";
 
 .registration {
-  background-color: $bg_color_light;
-  height: 100%;
-  min-height: 148px;
-  padding: 58px 0 0 0;
+  @include pages-section;
 
   &__title {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $accent-color;
-    margin-bottom: 58px;
+    @include pages-title;
   }
   &__text {
     width: 100%;
@@ -80,7 +72,6 @@
     margin-bottom: 20px;
   }
   &_btn{
-    @extend %btn_prime;
     background-color: $accent_color;
     color: #fff;
     text-transform: uppercase;

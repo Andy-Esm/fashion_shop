@@ -1,0 +1,97 @@
+
+//---------------header-----------
+.header__main {
+  background-color: $bg_color_dark;
+  position: relative;
+  padding: 18px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+//-----------header__button---------------
+
+.header__btn {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 32px;
+    height: 2px;
+    background-color: $accent_color;
+    display: none;
+  }
+
+  &:hover::after {
+    display: block;
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  background-color: #fff;
+  width: 28px;
+  height: 2px;
+
+  &.line--1 {
+
+    top: 5px;
+    bottom: 15px;
+  }
+
+  &.line--2 {
+    top: 15px;
+    bottom: 10px;
+  }
+
+  &.line--3 {
+    top: 25px;
+    bottom: 0;
+  }
+}
+
+//-------header__link-----------
+
+.header__link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 32px;
+    height: 2px;
+    background-color: $accent_color;
+    display: none;
+  }
+
+  &:hover::after {
+    display: block;
+  }
+}
+
+

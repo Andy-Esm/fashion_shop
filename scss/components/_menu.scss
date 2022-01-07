@@ -1,0 +1,54 @@
+.menu {
+  background-color: #fff;
+  padding: 38px 34px;
+  height: 100%;
+  min-height: 764px;
+  width: 100%;
+  max-width: 232px;
+  position: absolute;
+  top: 75px;
+  right: -250px;
+
+  transition: right 0.4s linear;
+
+  &.active {
+    right: 0;
+  }
+}
+
+.nav__title {
+  font-size: $fs-main;
+  color: $title_color;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  &--accent {
+    color: $accent_color;
+    text-transform: uppercase;
+    font-size: $fs-main;
+
+    &:hover {
+      color: $title_color;
+    }
+  }
+}
+
+.nav__list_item {
+  margin: 0 0 12px 24px;
+
+  > li {
+    margin-bottom: 11px;
+  }
+
+  > li:first-child {
+    margin-top: 11px;
+  }
+}
+
+.nav__link {
+  @extend %n_link_txt;
+
+  &:hover {
+    color: $accent_color;
+  }
+}
