@@ -1,0 +1,70 @@
+// Первая секция на дополнительных страницах
+@mixin pages-section {
+	background-color: $bg_color_light;
+	height: 100%;
+	min-height: 148px;
+	padding: 58px 0 0 0;
+}
+
+// Заголовки на дополнительных страницах
+@mixin pages-title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $accent-color;
+	margin-bottom: 58px;
+}
+
+// flex-column
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@mixin flex-column-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+// justify-content :space-between
+@mixin flex-sb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// Flex-center
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// Form input
+
+@mixin form_input_reg {
+	margin-bottom: 20px;
+	width: 360px;
+	height: 45px;
+	padding: 14px 16px;
+	border: 1px solid #a4a4a4;
+
+	font-size: $fs-main;
+	font-weight: 300;
+	color: $form_txt_color;
+	&:active {
+		border-color: $accent_color;
+		/*box-shadow: 1px 1px 1px 0 $accent_color;*/
+	}
+	&:focus {
+		border-color: $accent_color;
+		/*box-shadow: 1px 1px 1px 0 $accent_color;*/
+		outline: none;
+	}
+}
+
+//-----------FONTS-----------
+

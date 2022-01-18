@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="css/style.min.css" rel="stylesheet">
+	<title>Fashion Shop|Registration</title>
+</head>
+
+<body>
+<!------------------------.header__main------------------------>
+@@include('html/header.html')
+<!------------------------------------------------------------>
+<main>
+ 	<section class="registration reg">
+	    <h1 class="registration__title container">registration</h1>
+		<div class="registration__wrapper">
+			<div class="container form__wrapper">
+				<form action="#" class="reg__form">
+					<fieldset class="reg__form_name">
+						<legend class="reg__form_title">Your name</legend>
+						<div class="input__wrapper">
+							<input id="first__name" placeholder="First name" required type="text">
+							<label class="visually--hidden" for="first__name">First name</label>
+							<input id="last__name" placeholder="Last name" required type="text">
+							<label class="visually--hidden" for="last__name">Last name</label>
+						</div>
+						<div class="radio__wrapper">
+							<p>
+							<input checked id="gender__male" name="gender" type="radio" value="Male">
+							<label for="gender__male">Male</label>
+							</p>
+							<p>
+							<input id="gender__female" name="gender" type="radio" value="Female">
+							<label for="gender__female">Female</label>
+							</p>
+						</div>
+						
+					</fieldset>
+					<fieldset class="reg__form_login">
+						<legend class="reg__form_title">Login details</legend>
+						<div class="input__wrapper">
+							<input id="your__email" placeholder="Email" required type="email">
+							<label class="visually--hidden" for="your__email">Email</label>
+							<input id="your__password" placeholder="Password" required type="password">
+							<label class="visually--hidden" for="your__password">Password</label>
+						</div>
+						<p class="password__desc">
+							Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+						</p>
+					</fieldset>
+				
+					<button class="reg__form_btn btn__prime" type="submit">join now</button>
+				</form>
+				<div class="registration__text">
+					<h2 class="registration__text_title">loyalty has its perks</h2>
+					<p class="registration__text_desc">
+					 	Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+					</p>
+					<ul class="registration__text_list">
+						<li>15% off welcome offer</li>
+						<li>Free shipping, returns and exchanges on all orders</li>
+						<li>$10 off a purchase on your birthday</li>
+						<li>Early access to products</li>
+						<li>Exclusive offers & rewards</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </section>
+</main>
+<!-------------footer---------------->
+@@include('html/footer.html')
+<!----------------------------------->
+<script src="js/script.js"></script>
+</body>
+</html>

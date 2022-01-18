@@ -1,0 +1,95 @@
+.product__hero {
+	@include pages-section;
+}
+
+.product__hero_title {
+	@include pages-title;
+}
+
+.product__hero_wrapper {
+	@include flex-sb;
+}
+
+.product__menu {
+	@include flex-sb;
+	margin-bottom: 58px;
+	gap: 4px;
+
+	&_list {
+		font-size: $fs_main;
+		font-weight: 300;
+		line-height: 17px;
+		padding-bottom: 4px;
+		text-transform: uppercase;
+		color: #636363;
+
+		&:hover {
+			border-bottom: 1px solid #636363;
+		}
+
+		&:active {
+			font-weight: 700;
+			color: $accent-color;
+		}
+	}
+
+}
+
+.product__description {
+	padding: 64px 292px;
+	border: 1px solid $subtitle_color;
+
+
+	&_wrapper {
+		@include flex-column-center;
+		border-bottom: 1px solid $form_txt_color;
+	}
+
+	&_heading {
+		font-size: $fs-main;
+		font-weight: 300;
+		position: relative;
+		width: 100%;
+		max-width: 164px;
+		margin-bottom: 24px;
+		text-transform: uppercase;
+		color: $accent-color;
+
+		&::after {
+			position: absolute;
+			bottom: -12px;
+			left: 25%;
+			width: 63px;
+			height: 3px;
+			content: "";
+			background-color: $accent-color;
+		}
+	}
+
+	&_title {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 22px;
+		margin-bottom: 24px;
+		text-transform: uppercase;
+		color: $cart_desc;
+	}
+
+	&_text {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 17px;
+		margin-bottom: 24px;
+		text-align: center;
+		color: $card_txt_color;
+	}
+
+	&_price {
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 29px;
+		margin-bottom: 64px;
+		color: $accent-color;
+	}
+}
+

@@ -1,0 +1,35 @@
+//--------------.features-------------------
+.features {
+	background-color: $bg_color_dark;
+	height:           100%;
+	min-height:       342px;
+	padding:          104px 0;
+
+	&__list {
+		@include flex-sb;
+		gap: 30px;
+	}
+
+	&__item {
+		@include flex-column-center;
+
+		&_icon {
+			margin-bottom: 28px;
+		}
+
+		&_title {
+			font-size:     20px;
+			color:         $bg_color_card;
+			font-weight:   400;
+			margin-bottom: 16px;
+		}
+
+		&_text {
+			color:       $bg-color_card;
+			font-size:   $fs-main;
+			text-align:  center;
+			font-weight: 300;
+			line-height: 17px;
+		}
+	}
+}

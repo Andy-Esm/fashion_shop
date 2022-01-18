@@ -1,0 +1,96 @@
+//------------------promo-----------------------------
+.promo {
+	margin: 0 auto 94px auto;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 30px;
+
+		@include tablet {
+
+			gap: 26px;
+		}
+		@include small-tablet {
+			gap: 10px;
+		}
+
+	}
+
+	&__item {
+		@include flex-column-center;
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		max-width: 31%;
+		min-height: 230px;
+		gap: 10px;
+
+		@include tablet {
+			min-height: 168px;
+			gap: 0;
+		}
+
+		@include mobile {
+			max-width: 100%;
+			min-height: 248px;
+			
+		}
+
+
+		&_woman {
+			background: url("../../img/for_women.jpg") center / cover no-repeat;
+		}
+
+		&_man {
+			background: url("../../img/for_men.jpg") center / cover no-repeat;
+		}
+
+		&_kids {
+			background: url("../../img/for_kids.jpg") center / cover no-repeat;
+		}
+
+		&_accessories {
+			max-width: 100%;
+			background: url("../../img/accsesories.jpg") center / cover no-repeat;
+
+			@include mobile {
+				min-height: 112px;
+			}
+		}
+
+		&_title {
+			font-size: $fs-title;
+			z-index: 3;
+			text-align: center;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
+		&_sub {
+			font-size: 1.5rem;
+			z-index: 3;
+			text-align: center;
+			text-transform: uppercase;
+			color: $accent-color;
+		}
+
+		&::before {
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			content: "";
+			transition: background-color 0.5s linear;
+
+			background-color: rgba(33, 22, 22, 0.7);
+		}
+
+		&:hover::before {
+			background-color: rgba(33, 22, 22, 0);
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.btn__prime {
+  display: inline-block;
+  padding: 14px 38px;
+  color: $accent-color;
+  font-size: $fs_title;
+  text-align: center;
+  border: 1px solid $accent_color;
+  cursor: pointer;
+  &:active{
+    transform: scale(0.98);
+  }
+}

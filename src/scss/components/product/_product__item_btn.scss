@@ -1,0 +1,35 @@
+.product__item_btn {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 138px;
+  min-height: 43px;
+
+  @include flex-sb;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+
+  gap: 10px;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    border-color: #fff;
+    background-color: $accent_color;
+  }
+
+  svg {
+    width: 26px;
+    height: 24px;
+    fill: #fff;
+  }
+}

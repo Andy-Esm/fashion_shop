@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="css/style.min.css" rel="stylesheet">
+	<title>Fashion Shop|Shopping-cart</title>
+</head>
+
+<body>
+<!------------------------.header__main------------------------>
+@@include('html/header.html')
+<!------------------------------------------------------------->
+<main>
+	
+	<section class="shopping__cart">
+			<h1 class="shopping__cart_title container">shopping cart</h1>
+			<div class="shopping__cart_bg">
+					<div class="cart container">
+							<div class="cart__wrapper">
+									<div class="cart__item">
+											<img alt="photo of goods" class="cart__item_img" src="img/item_3.jpg">
+													<ul class="cart__desc">
+															<li class="cart__desc_item">
+																	<h2 class="cart__desc_title">mango  people  t-shirt</h2>
+															</li>
+															<li class="cart__desc_item">Price:<span class="cart__desc_item--price">$300</span></li>
+															<li class="cart__desc_item">Color: Red</li>
+															<li class="cart__desc_item">Size: XL</li>
+															<li class="cart__desc_item">Quantity:<span class="cart__desc_item--num">2</span></li>
+													</ul>
+									</div>
+									<div class="cart__item">
+											<img alt="photo of goods" class="cart__item_img" src="img/cart_item_2.jpg">
+													<ul class="cart__desc">
+															<li class="cart__desc_item">
+																	<h2 class="cart__desc_title">mango  people  t-shirt</h2>
+															</li>
+															<li class="cart__desc_item">Price:<span class="cart__desc_item--price">$300</span></li>
+															<li class="cart__desc_item">Color: Red</li>
+															<li class="cart__desc_item">Size: XL</li>
+															<li class="cart__desc_item">Quantity:<span class="cart__desc_item--num">2</span></li>
+													</ul>
+									</div>
+									<div class="cart__buttons">
+											<button class="cart__btn btn__prime">clear shopping cart</button>
+											<button class="cart__btn btn__prime">continue shopping</button>
+									</div>
+							</div>
+								<div class="form__inner">
+											<form action="#" class="cart__form">
+												<fieldset class="cart__form_wrapper">
+														<legend class="cart__form_title">shipping address</legend>
+														<label class="visually--hidden" for="city">City</label>
+														<input class="cart__form_input" id="city" placeholder="City" type="text">
+														<label class="visually--hidden" for="state">State</label>
+														<input class="cart__form_input" id="state" placeholder="State" type="text">
+														<label class="visually--hidden" for="zip">Postcode</label>
+														<input class="cart__form_input" id="zip" placeholder="Postcode / Zip" type="text">
+														<button class="cart__form_btn btn__prime" type="submit">get a quote</button>
+												</fieldset>
+									</form>
+									<div class="checkout">
+											<div class="checkout__text">
+													<p class="sub__total">sub total<span class="sub__total_price">$900</span></p>
+													<p class="grand__total">grand total<span class="sub__total_price--accent">$900</span></p>
+											</div>
+											<button class="btn__prime checkout__btn">proceed to checkout</button>
+									</div>
+								</div>
+					</div>
+			</div>
+	</section>
+</main>
+<!-------------footer---------------->
+@@include('html/footer.html')
+<!---------------------------------->
+<script src="js/script.js"></script>
+</body>
+</html>
