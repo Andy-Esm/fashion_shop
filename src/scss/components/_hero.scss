@@ -1,0 +1,89 @@
+//-----------------hero-------------------------
+.hero {
+	margin-bottom: 65px;
+	background-color: $bg-color_light;
+
+	@include small-tablet{
+		min-height: 368px;
+		padding: 25%;
+	}
+
+	@include mobile {
+		min-height: 368px;
+		padding: 15%;
+	
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+
+		&_title {
+			position: relative;
+			display: flex;
+			align-items: center;
+			flex-grow: 1;
+			height: 94px;
+			margin: 25% 0 0 0;
+			padding: 0 0 0 25px;
+			border-left: 12px solid $accent_color;
+
+			@include tablet {
+				margin: 15% 0 0 0;
+				padding: 0 0 0 16px;
+			}
+			@include small-tablet {
+				height: 66px;
+
+				
+			}
+		}
+	}
+
+	&__img {
+		width: 70%;
+		margin-left: -120px;
+
+		@include tablet {
+			max-width: 50%;
+			margin-left: -60px;
+		}
+		@include small-tablet {
+			display: none;
+		}
+	}
+
+	&__title {
+		font-size: 32px;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		@include tablet {
+			font-size: 24px;
+		}
+		@include small-tablet {
+			font-size: 20px;
+			line-height: 24px;
+
+		}
+
+		&--big {
+			font-size: 48px;
+			font-weight: 900;
+			text-transform: uppercase;
+			color: $title_color;
+
+			@include tablet {
+				font-size: 44px;
+			}
+			@include small-tablet {
+				font-size: 38px;
+			}
+		}
+
+		&--accent {
+			color: $accent_color;
+		}
+	}
+}

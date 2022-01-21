@@ -1,0 +1,21 @@
+// Цвета
+$accent_color: #f16d7f;
+$card_txt_color: #5d5d5d;
+$form_txt_color: #b1b1b1;
+$title_color: #222;
+$subtitle_color: #9f9f9f;
+$bg_color_dark: #222;
+$bg_color_light: #f1e4e6;
+$bg_color_card: #f8f8f8;
+$nav_link_color: #6f6e6e;
+$hover_header_color: #3f3f3f;
+$cart_desc: #575757;
+
+// Шрифты
+$fs_main: 0.9rem;
+$fs_title: 1rem;
+
+//container Прописываем ширину необходимого контейнера, в данном случае 1440px и вычисляем ширину с учетом падингов  
+$content-width: 1140px;
+$container-offset: 15px;
+$container-width: calc(#{$content-width} + (#{$container-offset} * 2));

@@ -1,0 +1,47 @@
+.footer__social {
+	background-color: $bg-color_dark;
+
+	&_wrapper {
+		@include flex-sb;
+		padding: 24px 0;
+	}
+
+	&_rights {
+		color: $bg_color_card;
+	}
+
+	&_list {
+		@include flex-sb;
+		gap: 8px;
+	}
+
+	&_item {
+		@include flex-center;
+		background-color: #fff;
+		width:            32px;
+		height:           32px;
+
+		transition:       background-color 0.3s ease-in;
+	}
+}
+
+.footer__social_item:hover {
+
+	background-color: $accent_color;
+
+}
+
+
+.footer__social_link {
+	padding:    4px;
+	text-align: center;
+}
+
+.footer__social_icon {
+	fill:       $title_color;
+	transition: fill 0.3s ease-in;
+}
+
+.footer__social_link:hover > .footer__social_icon:hover {
+	fill: #fff;
+}

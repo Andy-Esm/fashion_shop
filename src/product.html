@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="css/style.min.css" rel="stylesheet">
+	<title>fashion shop | product</title>
+</head>                                                                 
+<body>
+<!------------------------.header__main------------------------>
+@@include('html/header.html')
+<!------------------------------------------------------------>
+<main>
+	<!------.product__hero-->
+	<section class="product__hero">
+		<div class="product__hero_wrapper container">
+			<h1 class="product__hero_title">new arrivals</h1>
+			<ul class="product__menu">
+				<li class="product__menu_item"><a class="product__menu_list" href="#">home</a></li>
+				<li class="product__menu_item"><a class="product__menu_list" href="#">men</a></li>
+				<li class="product__menu_item"><a class="product__menu_list" href="#">new arrivals</a></li>
+			</ul>
+		</div>
+		
+		<!-------SLIDER---------------->
+	@@include('html/slider.html')
+		<!----------------------------->
+		
+	</section> <!--./product__hero-->
+	
+	<article class="product__description container">
+		
+		<div class="product__description_wrapper">
+			<div class="product__description_heading">women collection</div>
+			<h2 class="product__description_title">moschino cheap and chic</h2>
+			<p class="product__description_text">
+				Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+			</p>
+			<span class="product__description_price">$561</span>
+		</div><!--./product__description_wrapper-->
+		
+		
+		
+	</article>
+	
+</main>
+<!-------------footer---------------->
+@@include('html/footer.html')
+<!----------------------------------->
+	<script src="js/script.js"></script>
+</body>

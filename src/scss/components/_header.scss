@@ -1,0 +1,51 @@
+//---------------header-----------
+.header__main {
+	position: relative;
+	padding: 18px 0;
+	background-color: $bg_color_dark;
+}
+
+.header__wrapper {
+	@include flex-sb;
+
+	&_icon {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+
+}
+
+
+//-------header__link-----------
+
+.header__link {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		bottom: -8px;
+		left: 0;
+		display: none;
+		width: 32px;
+		height: 2px;
+		content: "";
+		background-color: $accent_color;
+	}
+
+	&:hover::after {
+		display: block;
+	}
+}
+
+.header__link_person{
+	@include mobile{
+		display: none;
+	}
+}
+.header__link_cart{
+	@include mobile{
+		display: none;
+	}
+}

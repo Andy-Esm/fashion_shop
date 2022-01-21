@@ -1,0 +1,35 @@
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: "Lato", sans-serif, "Roboto", sans-serif;
+	overflow-x: hidden;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.visually--hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+	padding: 0 $container-offset;
+}
+
+
