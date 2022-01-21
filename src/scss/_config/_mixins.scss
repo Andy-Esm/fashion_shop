@@ -2,7 +2,7 @@
 @mixin pages-section {
 	background-color: $bg_color_light;
 	height: 100%;
-	min-height: 148px;
+	min-height: 14.8rem;
 	padding: 58px 0 0 0;
 }
 
@@ -12,7 +12,7 @@
 	font-weight: 400;
 	text-transform: uppercase;
 	color: $accent-color;
-	margin-bottom: 58px;
+	margin-bottom: 5.8rem;
 }
 
 // flex-column
@@ -46,10 +46,10 @@
 // Form input
 
 @mixin form_input_reg {
-	margin-bottom: 20px;
-	width: 360px;
-	height: 45px;
-	padding: 14px 16px;
+	margin-bottom: 2rem;
+	width: 36rem;
+	height: 4.5rem;
+	padding: 1.4rem 1.6rem;
 	border: 1px solid #a4a4a4;
 
 	font-size: $fs-main;

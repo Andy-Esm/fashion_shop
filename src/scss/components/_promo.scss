@@ -1,19 +1,19 @@
 //------------------promo-----------------------------
 .promo {
-	margin: 0 auto 94px auto;
+	margin: 0 auto 9.4rem auto;
 
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		gap: 30px;
+		gap: 3rem;
 
 		@include tablet {
 
-			gap: 26px;
+			gap: 2.6rem;
 		}
 		@include small-tablet {
-			gap: 10px;
+			gap: 1rem;
 		}
 
 	}
@@ -24,18 +24,18 @@
 		z-index: 1;
 		width: 100%;
 		max-width: 31%;
-		min-height: 230px;
-		gap: 10px;
+		min-height: 23rem;
+		gap: 1rem;
 
 		@include tablet {
-			min-height: 168px;
+			min-height: 16.8rem;
 			gap: 0;
 		}
 
 		@include mobile {
 			max-width: 100%;
-			min-height: 248px;
-			
+			min-height: 24.8rem;
+
 		}
 
 
@@ -56,7 +56,7 @@
 			background: url("../../img/accsesories.jpg") center / cover no-repeat;
 
 			@include mobile {
-				min-height: 112px;
+				min-height: 11.2rem;
 			}
 		}
 

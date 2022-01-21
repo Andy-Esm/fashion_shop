@@ -1,22 +1,22 @@
 //-----------header__button---------------
 
 .header__btn {
-	background-color: transparent;
-	border: none;
 	position: relative;
-	width: 32px;
-	height: 32px;
+	width: 3.2rem;
+	height: 3.2rem;
 	cursor: pointer;
+	border: none;
+	background-color: transparent;
 
 	&::after {
-		content: "";
 		position: absolute;
+		bottom: -0.6rem;
 		left: 0;
-		bottom: -6px;
-		width: 32px;
-		height: 2px;
-		background-color: $accent_color;
 		display: none;
+		width: 3.2rem;
+		height: 0.2rem;
+		content: "";
+		background-color: $accent_color;
 	}
 
 	&:hover::after {
@@ -31,24 +31,24 @@
 .line {
 	position: absolute;
 	top: 0;
-	left: 2px;
+	left: 0.2rem;
+	width: 2.8rem;
+	height: 0.2rem;
 	background-color: #fff;
-	width: 28px;
-	height: 2px;
 
 	&.line--1 {
 
-		top: 5px;
-		bottom: 15px;
+		top: 0.5rem;
+		bottom: 1.5rem;
 	}
 
 	&.line--2 {
-		top: 15px;
-		bottom: 10px;
+		top: 1.5rem;
+		bottom: 1rem;
 	}
 
 	&.line--3 {
-		top: 25px;
+		top: 2.5rem;
 		bottom: 0;
 	}
 }

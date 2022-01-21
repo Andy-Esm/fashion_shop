@@ -1,19 +1,28 @@
 
 html {
-	font-size: 16px;
+	font-size: 62.5%;
+}
+
+@media (max-width: 900px) {
+	html {
+		font-size: 52.5%;
+	}
 }
 
 body {
 	font-family: "Lato", sans-serif, "Roboto", sans-serif;
+	font-size: 1.6rem;
 	overflow-x: hidden;
 }
 
-img {
+.image {
 	display: inline-block;
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	vertical-align: middle;
+
 }
+
 
 .visually--hidden {
 	position: absolute;

@@ -3,25 +3,35 @@
 
 	&_wrapper {
 		@include flex-sb;
-		padding: 24px 0;
+		padding: 2.4rem 0;
+
+		@include mobile {
+			@include flex-column;
+			gap: 4rem;
+		}
 	}
 
 	&_rights {
 		color: $bg_color_card;
+
+		@include mobile {
+			order: 1;
+		}
 	}
 
 	&_list {
 		@include flex-sb;
-		gap: 8px;
+		gap: .8rem;
+
 	}
 
 	&_item {
 		@include flex-center;
-		background-color: #fff;
-		width:            32px;
-		height:           32px;
+		width: 3.2rem;
+		height: 3.2rem;
+		transition: background-color 0.3s ease-in;
 
-		transition:       background-color 0.3s ease-in;
+		background-color: #fff;
 	}
 }
 
@@ -33,13 +43,13 @@
 
 
 .footer__social_link {
-	padding:    4px;
+	padding: 4px;
 	text-align: center;
 }
 
 .footer__social_icon {
-	fill:       $title_color;
 	transition: fill 0.3s ease-in;
+	fill: $title_color;
 }
 
 .footer__social_link:hover > .footer__social_icon:hover {

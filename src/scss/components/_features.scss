@@ -1,35 +1,40 @@
 //--------------.features-------------------
 .features {
+	height: 100%;
+	min-height: 34.2rem;
+	padding: 10.4rem 0;
 	background-color: $bg_color_dark;
-	height:           100%;
-	min-height:       342px;
-	padding:          104px 0;
 
 	&__list {
 		@include flex-sb;
-		gap: 30px;
+		gap: 3rem;
+
+		@include mobile {
+			@include flex-column;
+		}
 	}
 
 	&__item {
 		@include flex-column-center;
 
 		&_icon {
-			margin-bottom: 28px;
+			max-width: 100%;
+			margin-bottom: 2.8rem;
 		}
 
 		&_title {
-			font-size:     20px;
-			color:         $bg_color_card;
-			font-weight:   400;
-			margin-bottom: 16px;
+			font-size: 2rem;
+			font-weight: 400;
+			margin-bottom: 1.6rem;
+			color: $bg_color_card;
 		}
 
 		&_text {
-			color:       $bg-color_card;
-			font-size:   $fs-main;
-			text-align:  center;
+			font-size: $fs-main;
 			font-weight: 300;
-			line-height: 17px;
+			line-height: 1.7rem;
+			text-align: center;
+			color: $bg-color_card;
 		}
 	}
 }
