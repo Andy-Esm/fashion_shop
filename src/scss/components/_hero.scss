@@ -1,17 +1,17 @@
 //-----------------hero-------------------------
 .hero {
-	margin-bottom: 65px;
+	margin-bottom: 6.5rem;
 	background-color: $bg-color_light;
 
-	@include small-tablet{
-		min-height: 368px;
+	@include small-tablet {
+		min-height: 36.8rem;
 		padding: 25%;
 	}
 
 	@include mobile {
-		min-height: 368px;
+		min-height: 36.8rem;
 		padding: 15%;
-	
+
 	}
 
 	&__wrapper {
@@ -24,30 +24,30 @@
 			display: flex;
 			align-items: center;
 			flex-grow: 1;
-			height: 94px;
+			height: 9.4rem;
 			margin: 25% 0 0 0;
-			padding: 0 0 0 25px;
+			padding: 0 0 0 2.5rem;
 			border-left: 12px solid $accent_color;
 
 			@include tablet {
 				margin: 15% 0 0 0;
-				padding: 0 0 0 16px;
+				padding: 0 0 0 1.6rem;
 			}
 			@include small-tablet {
-				height: 66px;
+				height: 6.6rem;
 
-				
+
 			}
 		}
 	}
 
 	&__img {
 		width: 70%;
-		margin-left: -120px;
+		margin-left: -12rem;
 
 		@include tablet {
 			max-width: 50%;
-			margin-left: -60px;
+			margin-left: -6rem;
 		}
 		@include small-tablet {
 			display: none;
@@ -55,30 +55,30 @@
 	}
 
 	&__title {
-		font-size: 32px;
+		font-size: 3.2rem;
 		font-weight: 700;
 		text-transform: uppercase;
 
 		@include tablet {
-			font-size: 24px;
+			font-size: 2.4rem;
 		}
 		@include small-tablet {
-			font-size: 20px;
-			line-height: 24px;
+			font-size: 2rem;
+			line-height: 2.4rem;
 
 		}
 
 		&--big {
-			font-size: 48px;
+			font-size: 4.8rem;
 			font-weight: 900;
 			text-transform: uppercase;
 			color: $title_color;
 
 			@include tablet {
-				font-size: 44px;
+				font-size: 4.4rem;
 			}
 			@include small-tablet {
-				font-size: 38px;
+				font-size: 3.8rem;
 			}
 		}
 

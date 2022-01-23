@@ -12,10 +12,10 @@ $hover_header_color: #3f3f3f;
 $cart_desc: #575757;
 
 // Шрифты
-$fs_main: 0.9rem;
-$fs_title: 1rem;
+$fs_main: 1.4rem;
+$fs_title: 1.6rem;
 
 //container Прописываем ширину необходимого контейнера, в данном случае 1440px и вычисляем ширину с учетом падингов  
-$content-width: 1140px;
-$container-offset: 15px;
+$content-width: 114rem;
+$container-offset: 1.5rem;
 $container-width: calc(#{$content-width} + (#{$container-offset} * 2));

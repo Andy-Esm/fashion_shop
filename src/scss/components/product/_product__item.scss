@@ -1,58 +1,61 @@
 .product__item {
-  position: relative;
-  width: 100%;
-  max-width: 31%;
-  background-color: $bg_color_card;
+	position: relative;
+	width: 100%;
+	max-width: 31%;
+	background-color: $bg_color_card;
 
-  @include tablet {
-    max-width: 44%;
-  }
+	@include tablet {
+		max-width: 44%;
+	}
 
-  @include small-tablet {
-    max-width: 100%;
-  }
+	@include small-tablet {
+		max-width: 100%;
+	}
 
-  &_text {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 20px 16px;
-  }
+	&_text {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		padding: 20px 16px;
+	}
 
-  &_title {
-    font-size: $fs-main;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    color: $title-color;
-  }
+	&_title {
+		font-size: $fs-main;
+		margin-bottom: 12px;
+		text-transform: uppercase;
+		color: $title-color;
+	}
 
-  &_img {
-    position: relative;
-    z-index: 1;
+	&_img {
+		position: relative;
+		z-index: 1;
 
-    &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: none;
-      content: "";
-      background-color: rgba(58, 56, 56, 0.86);
-    }
+		@include tablet {
+			width: 100%;
+		}
 
-    &:hover::before {
-      display: block;
-    }
-  }
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: none;
+			content: "";
+			background-color: rgba(58, 56, 56, 0.86);
+		}
+
+		&:hover::before {
+			display: block;
+		}
+	}
 
 
+	&_desc {
+		@extend %card_text;
+	}
 
-  &_desc {
-    @extend %card_text;
-  }
-
-  &_price {
-    @extend %card_price;
-  }
+	&_price {
+		@extend %card_price;
+	}
 }

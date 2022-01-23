@@ -1,7 +1,7 @@
 //---------------header-----------
 .header__main {
 	position: relative;
-	padding: 18px 0;
+	padding: 1.8rem 0;
 	background-color: $bg_color_dark;
 }
 
@@ -11,7 +11,7 @@
 	&_icon {
 		display: flex;
 		align-items: center;
-		gap: 20px;
+		gap: 2rem;
 	}
 
 
@@ -25,11 +25,11 @@
 
 	&::after {
 		position: absolute;
-		bottom: -8px;
+		bottom: -0.8rem;
 		left: 0;
 		display: none;
-		width: 32px;
-		height: 2px;
+		width: 3.2rem;
+		height: .2rem;
 		content: "";
 		background-color: $accent_color;
 	}
@@ -39,13 +39,14 @@
 	}
 }
 
-.header__link_person{
-	@include mobile{
+.header__link_person {
+	@include mobile {
 		display: none;
 	}
 }
-.header__link_cart{
-	@include mobile{
+
+.header__link_cart {
+	@include mobile {
 		display: none;
 	}
 }
